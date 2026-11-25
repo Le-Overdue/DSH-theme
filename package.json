@@ -1,0 +1,53 @@
+{
+  "name": "dsh-overdue-theme",
+  "version": "1.0.0",
+  "description": "Repaints the DeepSeek Harness Web UI with the Overdue warm palette: cream with ink-black primary buttons in light mode, warm charcoal with an amber accent in dark mode.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Le-Overdue",
+    "url": "https://github.com/Le-Overdue"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le-Overdue/DSH-theme.git"
+  },
+  "homepage": "https://github.com/Le-Overdue/DSH-theme#readme",
+  "bugs": {
+    "url": "https://github.com/Le-Overdue/DSH-theme/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "assets",
+    "screenshots.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  }
+}

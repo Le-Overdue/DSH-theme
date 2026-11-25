@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Overdue theme",
+    "description": "Recolors the Web UI with the Overdue palette: cream with ink-black primary buttons and a soft purple accent in light mode, warm charcoal with an amber accent in dark mode. It is a token layer, not a theme entry, so Settings → Appearance gains no extra row: pick Light, Dark, or System there and the palette follows. Switch it off in Settings → Plugins. No network access, no settings, no stored data; tokens that later DSH releases add stay unthemed.",
+    "detail": "docs/DETAIL.md"
+  }
+}
